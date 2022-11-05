@@ -1,7 +1,7 @@
 #include "Palettes.h"
 #include <avr/pgmspace.h>
 
-unsigned int palette_info[32][2] PROGMEM = {
+const unsigned int palette_info[32][2] PROGMEM = {
 	{ 0,    8   }, /* OCTAL_RGB */
 	{ 8,    8   }, /* OCTAL_RBG */
 	{ 16,   8   }, /* OCTAL_GRB */
@@ -36,7 +36,7 @@ unsigned int palette_info[32][2] PROGMEM = {
 	{ 428,  37  }, /* RYCV_TEST */
 };
 
-unsigned char palette_data[3][465] PROGMEM = {
+const unsigned char palette_data[3][465] PROGMEM = {
 	/* RED */ {
 		/* OCTAL_RGB */
 		0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF,

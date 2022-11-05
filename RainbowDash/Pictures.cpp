@@ -1,7 +1,7 @@
 #include "Pictures.h"
 #include <avr/pgmspace.h>
 
-unsigned char picture_data[8][3][8][8] PROGMEM = {
+const unsigned char picture_data[8][3][8][8] PROGMEM = {
 	/* RD1 */ {
 		/* RED */ {
 			{ 0xFF, 0xFF, 0xFF, 0xDD, 0x77, 0x11, 0x00, 0x00 },
